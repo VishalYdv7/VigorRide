@@ -26,7 +26,7 @@ public class AuthServiceImpl implements AuthService{
 		if(user.isPresent()&&user.get().getPassword().equals(username)) {
 			return this.jwtService.createJwtToken(username);
 		}
-		return null;
+		return null
 	}
 
 }
